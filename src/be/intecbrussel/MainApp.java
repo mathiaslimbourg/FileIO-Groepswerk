@@ -25,7 +25,6 @@ public class MainApp {
             moveFileToMapExe();
             moveFileToMapGif();
             moveFileToMapGitignore();
-            moveFileToMapHidden();
             moveFileToMapJpg();
             moveFileToMapJson();
             moveFileToMapPdf();
@@ -64,7 +63,6 @@ public class MainApp {
         new File(test1_sorted + "gitignore").mkdirs();
         new File(test1_sorted + "jpg").mkdirs();
         new File(test1_sorted + "json").mkdirs();
-        new File(test1_sorted + "hidden").mkdirs();
         new File(test1_sorted + "pdf").mkdirs();
         new File(test1_sorted + "png").mkdirs();
         new File(test1_sorted + "py").mkdirs();
@@ -164,23 +162,6 @@ public class MainApp {
         File f2 = new File(test1_sorted + "gitignore");
 
         FilenameFilter filter = (dir, name) -> name.endsWith(".gitignore");
-
-        for (File f : f1.listFiles(filter)) {
-            System.out.println(f);
-            Files.copy(Paths.get(f.getAbsolutePath()), Paths.get(f2.getAbsolutePath() + "/" + f.getName()));
-            filePaths.add(Paths.get(f2.getAbsolutePath() + "/" + f.getName()));
-        }
-    }
-
-    private static void moveFileToMapHidden() throws IOException {
-
-        final String test1_sorted = "C:\\data\\Sorted\\";
-        final String test1_Unsorted = "C:\\data\\Unsorted\\";
-
-        File f1 = new File(test1_Unsorted);
-        File f2 = new File(test1_sorted + "hidden");
-
-        FilenameFilter filter = (dir, name) -> name.endsWith(".hidden");
 
         for (File f : f1.listFiles(filter)) {
             System.out.println(f);
