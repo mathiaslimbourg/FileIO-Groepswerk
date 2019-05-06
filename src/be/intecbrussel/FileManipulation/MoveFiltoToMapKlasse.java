@@ -1,4 +1,4 @@
-package be.intecbrussel.MoveFileToMap;
+package be.intecbrussel.FileManipulation;
 
 
 import java.nio.file.Files;
@@ -304,36 +304,43 @@ public class MoveFiltoToMapKlasse {
         File f1 = new File(test1_Unsorted);
         File f2 = new File(test1_sorted + "summary");
 
-        // FilenameFilter filter = (dir, name) -> name.endsWith(".txt");
-
-        /*
-         * for (File f : f1.listFiles(filter)) { System.out.println(f);
-         * Files.copy(Paths.get(f.getAbsolutePath()), Paths.get(f2.getAbsolutePath() +
-         * "/" + f.getName())); }
-         */
-
         Path pathOut = Paths.get("C:/data/Sorted/summary/summary.txt");
         try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(pathOut.toString())))) {
 
             Formatter formatter1 = new Formatter();
-            String text1 = "%-50s %-4s %-50s %-4s %-1s  %-2s %-5s  %-1s  %-8s  %-5s  %n%n";
-            formatter1.format(text1, "Name", "|", "Directory", "|", "Readable", "|", "Writable", "|", "Hidden", "|");
+            String text1 = "%-50s %-4s  %-1s  %-2s %-5s  %-1s  %-8s  %-5s  %n%n";
+            formatter1.format("     "+text1, "Name",  "|", "Readable", "|", "Writable", "|", "Hidden", "|");
             out.write(formatter1.toString());
 
-            for (Path f : filePaths) {
 
-                String ext = f.toFile().getParentFile().toPath().getFileName().toString();
-                String name = f.toFile().getName();
-                String read = f.toFile().canRead() ? "x" : "/";
-                String write = f.toFile().canWrite() ? "x" : "/";
-                String hidden = f.toFile().isHidden() ? "x" : "/";
+            Path p1;
+            for(int i = 0; i < filePaths.size(); i++) {
+
+                if ( i > 0) {
+                    p1 = filePaths.get(i - 1);
+                } else {
+                    p1 = filePaths.get(i);
+                }
+                Path p2 = filePaths.get(i);
+                String ext = filePaths.get(i).toFile().getParentFile().toPath().getFileName().toString();
+                String name = filePaths.get(i).toFile().getName();
+                String read = filePaths.get(i).toFile().canRead() ? "x" : "/";
+                String write = filePaths.get(i).toFile().canWrite() ? "x" : "/";
+                String hidden = filePaths.get(i).toFile().isHidden() ? "x" : "/";
+
+                if (i == 0 || !(p1.toFile().getParentFile().toPath().getFileName().toString()
+                        .equals(p2.toFile().getParentFile().toPath().getFileName().toString()))) {
+                    out.println("----------------------------------------------");
+                    out.println(ext + ":");
+                    out.println("\n ");
+                }
 
 
                 Formatter formatter2 = new Formatter();
-                String text2 = "%-50s %-5s %-49s %-5s  %-5s  %-5s  %-5s  %-5s %-5s  %-5s %n";
+                String text2 = "%-50s %-5s   %-5s  %-5s  %-5s  %-5s %-5s  %-5s %n";
 
-                formatter2.format(text2, name, "|", ext, "|",read, "|", write, "|", hidden, "|");
-                out.write(formatter2.toString());
+                formatter2.format("     "+text2, name,  "|",read, "|", write, "|", hidden, "|");
+                out.print(formatter2.toString());
 
             }
         }
