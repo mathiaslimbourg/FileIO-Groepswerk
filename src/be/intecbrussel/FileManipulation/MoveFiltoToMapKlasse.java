@@ -1,4 +1,4 @@
-package be.intecbrussel;
+package be.intecbrussel.MoveFileToMap;
 
 
 import java.nio.file.Files;

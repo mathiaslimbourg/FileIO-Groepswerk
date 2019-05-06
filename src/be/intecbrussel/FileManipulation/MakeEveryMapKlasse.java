@@ -1,4 +1,4 @@
-package be.intecbrussel;
+package be.intecbrussel.MakeEveryMap;
 
 import java.io.File;
 
