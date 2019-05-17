@@ -1,0 +1,31 @@
+
+`squid:S3457Ö"AFormat specifiers should be used instead of string concatenation.(ä€ÖÂ8î¿§·ª-
+ysquid:S1192'"VDefine a constant instead of duplicating this literal "C:\\data\\Unsorted\\" 14 times.(“”¹øøÿÿÿÿ8ùÔê¶ª-
+Psquid:S1135Ã"2Complete the task associated to this TODO comment.(»Ú€F8×¤Ø·ª-
+Vsquid:S1135Ù"2Complete the task associated to this TODO comment.(¸ä÷İüÿÿÿÿ8ó§Ô·ª-
+]squid:S1118":Add a private constructor to hide the implicit public one.(ÄëÖÄıÿÿÿÿ8ùÔê¶ª-
+isquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(äÃ…¥8ùÔê¶ª-
+Qsquid:S1135Ë"2Complete the task associated to this TODO comment.(·§‰ç8ç‚’·ª-
+Psquid:S1135Æ"2Complete the task associated to this TODO comment.(ÓÈŞR8İ­â·ª-
+Usquid:S1135"2Complete the task associated to this TODO comment.(œÌñ–ÿÿÿÿÿ8úõä¶ª-
+Vsquid:S1135Ò"2Complete the task associated to this TODO comment.(Ñ¡¸»ùÿÿÿÿ8—¼·ª-
+ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾—®ó8¸ˆõµª-
+ksquid:S2095Ó"GUse try-with-resources or close this "Formatter" in a "finally" clause.(İ–Šªøÿÿÿÿ8ùÔê¶ª-
+Rsquid:S1444"/Make this "public static filePaths" field final(ÌŞĞáùÿÿÿÿ8ùÔê¶ª-
+ksquid:S2095ñ"GUse try-with-resources or close this "Formatter" in a "finally" clause.(ÚÊ¼ùÿÿÿÿ8î¿§·ª-
+Usquid:S1135$"2Complete the task associated to this TODO comment.(¦²ïöøÿÿÿÿ8ùÔê¶ª-
+Psquid:S1135+"2Complete the task associated to this TODO comment.(Úì°Â8º¢·ª-
+"squid:ClassVariableVisibilityCheck"UMake filePaths a static final constant or non-public and provide accessors if needed.(ÌŞĞáùÿÿÿÿ8ùÔê¶ª-
+Qsquid:S1135Õ"2Complete the task associated to this TODO comment.(¾Âó—8º¡·ª-
+wsquid:S1192&"TDefine a constant instead of duplicating this literal "C:\\data\\Sorted\\" 21 times.(¹²Óøÿÿÿÿ8Ã“ç¶ª-
+Ksquid:S1481Ì"'Remove this unused "f1" local variable.(‚µÖâûÿÿÿÿ8Ã“ç¶ª-
+@squid:S2386"Make this member "protected".(ÌŞĞáùÿÿÿÿ8ùÔê¶ª-
+Usquid:S1135""2Complete the task associated to this TODO comment.(†‹³…úÿÿÿÿ8úª‹·ª-
+Psquid:S1135"2Complete the task associated to this TODO comment.(¼ÀÚÙ8Ûšöµª-
+`squid:S3457ô"AFormat specifiers should be used instead of string concatenation.(¡ÃÁÅ8î¿§·ª-
+Psquid:S11350"2Complete the task associated to this TODO comment.(ı¢ˆ¯8ùÔê¶ª-
+Usquid:S11354"2Complete the task associated to this TODO comment.(òêÁëüÿÿÿÿ8ùÔê¶ª-
+Psquid:S1135"2Complete the task associated to this TODO comment.(¢­áß8ùÔê¶ª-
+Psquid:S1135)"2Complete the task associated to this TODO comment.(³ÿß°8ùÔê¶ª-
+Ksquid:S1481Í"'Remove this unused "f2" local variable.(—úÛ‘ıÿÿÿÿ8ùÔê¶ª-
+Psquid:S11352"2Complete the task associated to this TODO comment.(»×€º8ùÔê¶ª-

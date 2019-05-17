@@ -14,6 +14,7 @@ public class MainApp {
 
         try {
 
+            //TODO Je had hier ook een init methode voor kunnen maken in de MoveFiltoToMapKlasse
             MakeEveryMapKlasse.makeEveyMap();
 
             MoveFiltoToMapKlasse.moveFileToMapCsv();
